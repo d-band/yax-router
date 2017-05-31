@@ -1,0 +1,16 @@
+parser: babel-eslint
+extends: standard
+
+plugins:
+  - react
+
+env:
+  browser: true
+  mocha: true
+
+rules:
+  camelcase: 0
+  semi: [2, always]
+  object-curly-spacing: [2, always]
+  react/jsx-uses-react: 2
+  react/jsx-uses-vars: 2
