@@ -8,7 +8,7 @@ yax-router
 [![Dependency Status](https://david-dm.org/d-band/yax-router.svg)](https://david-dm.org/d-band/yax-router)
 [![Greenkeeper badge](https://badges.greenkeeper.io/d-band/yax-router.svg)](https://greenkeeper.io/)
 
-> Router plugin for yax (Using react-router)
+> Router plugin for [yax](https://github.com/d-band/yax) (Using react-router)
 
 ## Getting Started
 
@@ -19,6 +19,9 @@ $ npm install --save yax-router
 ```
 
 ### Usage Example
+
+- [HackerNews](https://github.com/d-band/yax-hackernews): HackerNews clone built with [yax](https://github.com/d-band/yax) and [yax-router](https://github.com/d-band/yax-router), based on [dva-hackernews](https://github.com/dvajs/dva-hackernews).
+
 
 ```javascript
 import React from 'react';
