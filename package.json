@@ -80,7 +80,7 @@
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.5",
     "react-router": "^4.1.1",
-    "react-test-renderer": "^15.5.4",
+    "react-test-renderer": "^16.0.0",
     "yax": "^0.3.0"
   }
 }
