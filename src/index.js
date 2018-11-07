@@ -1,15 +1,17 @@
 import { matchPath } from 'react-router';
 import { compose, composeReducers, mapReducers, applyMiddleware } from 'yax';
-import { routerReducer, routerMiddleware } from 'react-router-redux';
+import { connectRouter, routerMiddleware } from 'connected-react-router';
 
 export default (history) => {
   return createStore => (reducer, preloadedState, enhancer) => {
-    const routerMW = routerMiddleware(history);
-    const routerEnhancer = applyMiddleware(routerMW);
+    const middleware = routerMiddleware(history);
+    const routerEnhancer = applyMiddleware(middleware);
     const store = createStore(
       composeReducers(
         reducer,
-        mapReducers({ router: routerReducer })
+        mapReducers({
+          router: connectRouter(history)
+        })
       ),
       preloadedState,
       enhancer ? compose(enhancer, routerEnhancer) : routerEnhancer
@@ -47,4 +49,4 @@ export {
   CALL_HISTORY_METHOD,
   push, replace, go, goBack, goForward,
   routerActions
-} from 'react-router-redux';
+} from 'connected-react-router';

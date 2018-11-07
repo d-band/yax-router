@@ -26,7 +26,7 @@
       "src/**/*.js"
     ],
     "require": [
-      "babel-register"
+      "@babel/register"
     ],
     "sourceMap": false,
     "instrument": false
@@ -52,35 +52,35 @@
     "yax": "*"
   },
   "dependencies": {
-    "babel-runtime": "^6.23.0",
-    "react-router-redux": "^5.0.0-alpha.6"
+    "@babel/runtime": "^7.1.5",
+    "connected-react-router": "^5.0.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-eslint": "^8.0.0",
-    "babel-plugin-istanbul": "^4.1.4",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.5.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
-    "babel-register": "^6.24.1",
-    "coveralls": "^2.13.0",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.0.0",
+    "@babel/preset-env": "^7.1.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-istanbul": "^5.1.0",
+    "coveralls": "^3.0.2",
     "cross-env": "^5.0.0",
-    "eslint": "^4.1.0",
-    "eslint-config-standard": "^10.2.0",
+    "eslint": "^5.8.0",
+    "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.3.0",
-    "eslint-plugin-node": "^5.0.0",
-    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-react": "^7.0.1",
-    "eslint-plugin-standard": "^3.0.1",
-    "expect": "^21.0.0",
-    "mocha": "^3.4.2",
-    "nyc": "^11.0.0",
+    "eslint-plugin-standard": "^4.0.0",
+    "expect": "^23.6.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.5",
     "react-router": "^4.1.1",
     "react-test-renderer": "^16.0.0",
-    "yax": "^0.3.0"
+    "yax": "^0.4.0"
   }
 }
