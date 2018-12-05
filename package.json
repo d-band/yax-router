@@ -78,7 +78,7 @@
     "nyc": "^13.1.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-redux": "^5.0.5",
+    "react-redux": "^6.0.0",
     "react-router": "^4.1.1",
     "react-test-renderer": "^16.0.0",
     "yax": "^0.4.0"
