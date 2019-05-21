@@ -4,13 +4,13 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import { Route } from 'react-router';
-import createHistory from 'history/createMemoryHistory';
+import { createMemoryHistory } from 'history';
 import router, { Router, push } from '../src/index';
 
 describe('basic', () => {
   it('basic test', () => {
     let count = 0;
-    const history = createHistory();
+    const history = createMemoryHistory();
     const store = yax({
       state: {}
     }, router(history));
