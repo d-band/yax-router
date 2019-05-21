@@ -1,6 +1,6 @@
 {
   "name": "yax-router",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Router plugin for yax (Using react-router)",
   "main": "lib/index.js",
   "module": "es/index.js",
