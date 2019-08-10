@@ -11,13 +11,12 @@
     "src"
   ],
   "scripts": {
-    "prebuild": "eslint src test --fix",
+    "lint": "eslint src test",
     "build:lib": "cross-env BABEL_ENV=cjs babel src --out-dir lib",
     "build:es": "cross-env BABEL_ENV=es babel src --out-dir es",
     "build": "npm run build:lib && npm run build:es",
-    "pretest": "npm run build",
     "test": "cross-env BABEL_ENV=test nyc mocha --no-timeouts",
-    "prepare": "npm test",
+    "prepare": "npm run build",
     "report": "nyc report --reporter=html",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
