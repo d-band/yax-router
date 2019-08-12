@@ -80,6 +80,6 @@
     "react-redux": "^7.1.0",
     "react-router": "^5.0.1",
     "react-test-renderer": "^16.9.0",
-    "yax": "^0.4.1"
+    "yax": "^0.4.2"
   }
 }
